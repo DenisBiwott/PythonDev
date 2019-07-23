@@ -1,0 +1,43 @@
+action: GLOB, msg: packaging
+cwd: /home/denis/Desktop/django_denis/packaging/packaging
+cmd: /home/denis/Desktop/django_denis/packaging/env/bin/python3 setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing example_pkg_kipkoech.egg-info/PKG-INFO
+writing dependency_links to example_pkg_kipkoech.egg-info/dependency_links.txt
+writing top-level names to example_pkg_kipkoech.egg-info/top_level.txt
+reading manifest file 'example_pkg_kipkoech.egg-info/SOURCES.txt'
+writing manifest file 'example_pkg_kipkoech.egg-info/SOURCES.txt'
+running check
+creating example-pkg-kipkoech-0.0.1
+creating example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info
+creating example-pkg-kipkoech-0.0.1/kipkoech-pkg
+copying files to example-pkg-kipkoech-0.0.1...
+copying README.md -> example-pkg-kipkoech-0.0.1
+copying setup.py -> example-pkg-kipkoech-0.0.1
+copying example_pkg_kipkoech.egg-info/PKG-INFO -> example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info
+copying example_pkg_kipkoech.egg-info/SOURCES.txt -> example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info
+copying example_pkg_kipkoech.egg-info/dependency_links.txt -> example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info
+copying example_pkg_kipkoech.egg-info/top_level.txt -> example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info
+copying kipkoech-pkg/__init__.py -> example-pkg-kipkoech-0.0.1/kipkoech-pkg
+copying kipkoech-pkg/mathlib.py -> example-pkg-kipkoech-0.0.1/kipkoech-pkg
+copying kipkoech-pkg/test_mathlib.py -> example-pkg-kipkoech-0.0.1/kipkoech-pkg
+Writing example-pkg-kipkoech-0.0.1/setup.cfg
+creating '.tox/dist/example-pkg-kipkoech-0.0.1.zip' and adding 'example-pkg-kipkoech-0.0.1' to it
+adding 'example-pkg-kipkoech-0.0.1'
+adding 'example-pkg-kipkoech-0.0.1/kipkoech-pkg'
+adding 'example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info'
+adding 'example-pkg-kipkoech-0.0.1/PKG-INFO'
+adding 'example-pkg-kipkoech-0.0.1/setup.cfg'
+adding 'example-pkg-kipkoech-0.0.1/README.md'
+adding 'example-pkg-kipkoech-0.0.1/setup.py'
+adding 'example-pkg-kipkoech-0.0.1/kipkoech-pkg/__init__.py'
+adding 'example-pkg-kipkoech-0.0.1/kipkoech-pkg/mathlib.py'
+adding 'example-pkg-kipkoech-0.0.1/kipkoech-pkg/test_mathlib.py'
+adding 'example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info/PKG-INFO'
+adding 'example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info/dependency_links.txt'
+adding 'example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info/top_level.txt'
+adding 'example-pkg-kipkoech-0.0.1/example_pkg_kipkoech.egg-info/SOURCES.txt'
+removing 'example-pkg-kipkoech-0.0.1' (and everything under it)
+/usr/lib/python3.6/distutils/dist.py:261: UserWarning: Unknown distribution option: 'long_description_content_type'
+  warnings.warn(msg)

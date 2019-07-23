@@ -1,0 +1,14 @@
+action: py36, msg: installpkg
+cwd: /home/denis/Desktop/django_denis/packaging/packaging
+cmd: /home/denis/Desktop/django_denis/packaging/packaging/.tox/py36/bin/python -m pip install --exists-action w .tox/.tmp/package/1/example-pkg-kipkoech-0.0.1.zip
+Processing ./.tox/.tmp/package/1/example-pkg-kipkoech-0.0.1.zip
+Building wheels for collected packages: example-pkg-kipkoech
+  Building wheel for example-pkg-kipkoech (setup.py): started
+  Building wheel for example-pkg-kipkoech (setup.py): finished with status 'done'
+  Stored in directory: /home/denis/.cache/pip/wheels/eb/2e/f1/f801ccbba3c590c2e05c38c43ba75fd1781c5e0b4fc0f3a19f
+Successfully built example-pkg-kipkoech
+Installing collected packages: example-pkg-kipkoech
+  Found existing installation: example-pkg-kipkoech 0.0.1
+    Not uninstalling example-pkg-kipkoech at /home/denis/Desktop/django_denis/packaging/packaging, outside environment /home/denis/Desktop/django_denis/packaging/packaging/.tox/py36
+    Can't uninstall 'example-pkg-kipkoech'. No files were found to uninstall.
+Successfully installed example-pkg-kipkoech-0.0.1

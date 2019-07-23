@@ -1,0 +1,9 @@
+README.md
+setup.py
+example_pkg_kipkoech.egg-info/PKG-INFO
+example_pkg_kipkoech.egg-info/SOURCES.txt
+example_pkg_kipkoech.egg-info/dependency_links.txt
+example_pkg_kipkoech.egg-info/top_level.txt
+kipkoech-pkg/__init__.py
+kipkoech-pkg/mathlib.py
+kipkoech-pkg/test_mathlib.py

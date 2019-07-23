@@ -1,0 +1,42 @@
+Used to run asynchronous tasks from a python app
+Celery is used when the task to be executed is expensive, i.e= takes a lot of time to run or requires a lot of resources. This allows  the user to switch to another task as they wait for the result to be returned.
+
+Consists of 3 things
+1. client app- one that wants to call something asynchronously
+2. message queue- whenever the app wants to call sth it places it on the message queue eg Rabbitmq, Redis
+3. Celery- listens to the message queue waiting for tasks to execute. Once tasks are available celery executes them outside of the python app
+
+start celery => celery -A tasks worker --loglevel=info => starts server in foreground
+start multiple workers => celery multi start w1 -A proj -l info
+
+Concurrency is the number of prefork worker process used to process your tasks concurrently, when all
+ of these are busy doing work new tasks will have to wait for one of the tasks to finish before it can be processed.
+
+Events is an option that when enabled causes Celery to send monitoring messages (events) for actions occurring in the worker. These can be used by
+ monitor programs like celery events, and Flower
+
+RABBITMQ
+broker = "amqp://localhost"  => is default message broker
+start server => sudo service rabbitmq-server start
+restart server => sudo service rabbitmq-server restart
+check status => sudo rabbitmqctl status
+
+REDIS
+broker = "redis://localhost"
+
+CELERY METHODS
+1. .delay() => calls and adds tasks to mq, celery then picks up the tasks and executes them. eg add.delay(x, y)
+  returns "AsyncResult" => used to check the status of the task
+2. .get() => gives the result of the task. eg result.ready()
+3. .status => gives true or false depending on the state of execution
+4. .traceback => gain access to original traceback if any
+
+Result backends = store state and result of tasks
+1. SQLAlchemy/Django ORM
+2. Memcached
+3. RPC(rabbitMQ/Qpid)
+4. Redis
+5. cache-Memcached
+6. cassandra
+7. Elasticsearch
+8. Ironcache

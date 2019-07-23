@@ -1,0 +1,9 @@
+action: py36, msg: getenv
+cwd: /home/denis/Desktop/django_denis/packaging/packaging/.tox
+cmd: /home/denis/Desktop/django_denis/packaging/env/bin/python3 -m virtualenv --no-download --python /home/denis/Desktop/django_denis/packaging/env/bin/python3 py36
+Already using interpreter /home/denis/Desktop/django_denis/packaging/env/bin/python3
+Using base prefix '/usr'
+New python executable in /home/denis/Desktop/django_denis/packaging/packaging/.tox/py36/bin/python3
+Also creating executable in /home/denis/Desktop/django_denis/packaging/packaging/.tox/py36/bin/python
+Installing setuptools, pip, wheel...
+done.
